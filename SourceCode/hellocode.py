@@ -1,3 +1,5 @@
+import numpy
+
 print("Hello everyone in team")
 
 my_baby_bool = "true"
