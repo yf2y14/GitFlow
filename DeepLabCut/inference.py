@@ -21,6 +21,7 @@ import tensorflow as tf
 from video2csv import *
 from normalized import csv_std
 
+
 graph1=tf.Graph()
 
 Model=r"C:\JoePython\AidySchool\DeepLabCut\tok.h5"
@@ -57,7 +58,7 @@ def jf_inf(video_file):
     std_csv = pd.read_csv(feature_csvfile,header=[1],index_col=0)  
     std_data=std_csv
     cls,conf=predict(Model,std_data)
-    return cls
+    return int(cls),float(conf)
 
 
 
