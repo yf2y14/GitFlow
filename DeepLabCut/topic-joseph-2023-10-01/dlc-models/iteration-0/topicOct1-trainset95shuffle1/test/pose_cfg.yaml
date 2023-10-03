@@ -1,0 +1,53 @@
+dataset: 
+  training-datasets\iteration-0\UnaugmentedDataSet_topicOct1\topic_joseph95shuffle1.mat
+dataset_type: imgaug
+num_joints: 20
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+- - 5
+- - 6
+- - 7
+- - 8
+- - 9
+- - 10
+- - 11
+- - 12
+- - 13
+- - 14
+- - 15
+- - 16
+- - 17
+- - 18
+- - 19
+all_joints_names:
+- Nose
+- L_Eye
+- R_Eye
+- L_Ear
+- R_Ear
+- Throat
+- Withers
+- TailSet
+- L_F_Paw
+- R_F_Paw
+- L_F_Wrist
+- R_F_Wrist
+- L_F_Elbow
+- R_F_Elbow
+- L_B_Paw
+- R_B_Paw
+- L_B_Hock
+- R_B_Hock
+- L_B_Stiffle
+- R_B_Stiffle
+net_type: resnet_50
+init_weights: 
+  E:\DeepLabCut\topic-joseph-2023-10-01\dlc-models\iteration-0\topicOct1-trainset95shuffle1\train\snapshot-75000
+global_scale: 1.0
+location_refinement: true
+locref_stdev: 7.2801
+scoremap_dir: test
